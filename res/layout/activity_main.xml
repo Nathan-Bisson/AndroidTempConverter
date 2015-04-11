@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.algonquincollege.biss0180.temperatureconverter.MainActivity" >
+
+    <com.tinycoolthings.double_seekbar.DoubleSeekBar
+        android:id="@+id/celsius_doubleseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/celsius_doubleseekbar"
+        android:layout_below="@+id/celsius_doubleseekbar"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <com.tinycoolthings.double_seekbar.DoubleSeekBar
+        android:id="@+id/far_doubleseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCelsius"
+        android:layout_below="@+id/editTextCelsius"
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:id="@+id/editTextFar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/far_doubleseekbar"
+        android:layout_below="@+id/far_doubleseekbar"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignLeft="@+id/far_doubleseekbar"
+        android:layout_below="@+id/editTextCelsius"
+        android:layout_marginTop="19dp"
+        android:background="#FF00FF00" />
+
+</RelativeLayout>
